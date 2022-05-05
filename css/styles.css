@@ -1,0 +1,194 @@
+body {
+  font-family: "Oswald", sans-serif;
+}
+
+/**********************  HEADER *************************/
+header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1; /*Pt ca header sa fie deasupra sectiunii*/
+}
+
+.header-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+
+header a {
+  color: white;
+  margin-left: 24px;
+  font-weight: bold;
+}
+
+header a:hover {
+  color: white;
+}
+
+header a:visited {
+  color: white;
+}
+
+#menu-icon {
+  width: 32px;
+}
+
+.solid-header {
+  position: fixed;
+  background: #c69572;
+  transition: background-color 0.4s ease;
+}
+/**********************  HERO SECTION *************************/
+
+#hero-section {
+  background-image: url(../image/photo-1600093463592-8e36ae95ef56.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #4133329c;
+  height: 100vh;
+}
+
+#hero-logo {
+  width: 180px;
+  border-radius: 50%;
+  border: 5px solid #cd9575;
+}
+
+#arrow-down {
+  position: absolute;
+  bottom: 64px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: block;
+  width: 64px;
+}
+
+.arr-dw {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+/**********************  INTRO SECTION *************************/
+#intro-section {
+  background: #eae7de;
+}
+
+/**********************  ABOUT SECTION *************************/
+#about-bg-1 {
+  background: url(../image/great-place.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  min-width: 480px;
+  height: 400px;
+}
+
+#about-bg-2 {
+  background: url(../image/coffee-cup.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  height: 395px;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  #hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #080707bd;
+    height: 100vh;
+  }
+}
+
+/**********************  MENU SECTION *************************/
+#menu-section {
+  background: #eae7de;
+}
+
+#menu-section img {
+  width: 300px;
+  height: 305px;
+}
+
+/**********************  CONTACT SECTION *************************/
+#contact-info-bg-1 {
+  background: linear-gradient(to right, #36313782, #36313782),
+    url(../image/open.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+}
+
+#contact-info-bg-2 {
+  background-color: #312423a8;
+}
+
+/**********************  MAP SECTION *************************/
+#map {
+  height: 480px;
+}
+
+/**********************  FOOTER *************************/
+footer {
+  background: #312423;
+}
+
+footer a img {
+  width: 32px;
+  height: 32px;
+}
+
+@media (max-width: 768px) {
+  footer {
+    text-align: center;
+  }
+
+  #social-icons {
+    text-align: center !important;
+    margin-top: 8px;
+  }
+}
+
+/**********************  MOBILE MENU *************************/
+#mobile-menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: #312423ed;
+  display: none;
+  z-index: 2;
+}
+
+#mobile-menu a {
+  color: white;
+}
+
+#mobile-menu a:hover {
+  color: rgb(175, 171, 171);
+}
+
+#mobile-menu #close-btn {
+  position: absolute;
+  right: 29px;
+  top: 12px;
+  width: 36px;
+}
